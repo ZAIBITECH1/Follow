@@ -21,8 +21,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Your bot token
-TOKEN = "7331775812:AAGq8PMEVVEEb7N_dMby48-SV8_PSQo-BLM"
+TOKEN = "7432378274:AAGlE28b8ayYHucjOTB17Ic5oOG-BVtZGrs"
 
 # Global dictionaries to manage user states and connections
 user_states = {}  # Tracks whether users are connected, searching, or idle
@@ -41,7 +40,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handles the /start command."""
     keyboard = get_persistent_keyboard()
     await update.message.reply_text(
-        "Welcome to the bot! Use the buttons below to start chatting.",
+        "Welcome to the bot! Use the buttons below to start chatting.Click on Find button,share your username, send screenshots to show that you have followed successfully, Click on Next button to find another partner.Please follow me also..my username is 👉 zaibi077 ",
         reply_markup=keyboard,
     )
 
